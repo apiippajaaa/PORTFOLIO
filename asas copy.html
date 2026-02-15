@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link href="./.dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <link href="./src/css/style.css" rel="stylesheet" />
 
     <link
@@ -70,7 +70,6 @@
 
       <!-- SECTION 2 -->
       <section class="snap-section min-h-screen flex items-center">
-        <!-- <div class="flex md:grid text-blue-500 md:text-blue-500">dsdsd</div> -->
         <div class="max-w-6xl mx-auto px-6 md:px-16 w-full">
           <!-- Heading -->
           <div class="mb-10 md:mb-14 reveal">
@@ -100,13 +99,98 @@
           </div>
 
           <!-- Cards -->
-          <div
-            class="carousel relative w-full overflow-hidden md:overflow-visible"
-          >
+          <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <!-- FULLSTACK -->
             <div
-              id="services-container"
-              class="carousel-track flex md:grid md:grid-cols-3 md:gap-10 transition-transform duration-300 ease-out md:transform-none"
-            ></div>
+              class="relative group rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-xl p-7 md:p-8 overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                class="absolute -right-12 -top-12 w-52 h-52 text-blue-500/10 group-hover:text-blue-500/20 transition duration-500 blur-[1px]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M73.4 182.6C60.9 170.1 60.9 149.8 73.4 137.3C85.9 124.8 106.2 124.8 118.7 137.3L278.7 297.3C291.2 309.8 291.2 330.1 278.7 342.6L118.7 502.6C106.2 515.1 85.9 515.1 73.4 502.6C60.9 490.1 60.9 469.8 73.4 457.3L210.7 320L73.4 182.6zM288 448L544 448C561.7 448 576 462.3 576 480C576 497.7 561.7 512 544 512L288 512C270.3 512 256 497.7 256 480C256 462.3 270.3 448 288 448z"
+                />
+              </svg>
+
+              <div class="relative space-y-4">
+                <h3 class="text-lg md:text-xl font-semibold">
+                  Fullstack Development
+                </h3>
+
+                <ul class="text-neutral-400 space-y-2 text-sm">
+                  <li>Backend Architecture</li>
+                  <li>API & Database Design</li>
+                  <li>Frontend Engineering</li>
+                  <li>Performance Optimization</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- DESIGN -->
+            <div
+              class="relative group rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-xl p-7 md:p-8 overflow-hidden"
+            >
+              <!-- BIG SOLID ICON -->
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                class="absolute -right-12 -top-12 w-52 h-52 text-blue-500/10 group-hover:text-blue-500/20 transition duration-500 blur-[1px]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M432.5 82.3L382.4 132.4L507.7 257.7L557.8 207.6C579.7 185.7 579.7 150.3 557.8 128.4L511.7 82.3C489.8 60.4 454.4 60.4 432.5 82.3zM343.3 161.2L342.8 161.3L198.7 204.5C178.8 210.5 163 225.7 156.4 245.5L67.8 509.8C64.9 518.5 65.9 528 70.3 535.8L225.7 380.4C224.6 376.4 224.1 372.3 224.1 368C224.1 341.5 245.6 320 272.1 320C298.6 320 320.1 341.5 320.1 368C320.1 394.5 298.6 416 272.1 416C267.8 416 263.6 415.4 259.7 414.4L104.3 569.7C112.1 574.1 121.5 575.1 130.3 572.2L394.6 483.6C414.3 477 429.6 461.2 435.6 441.3L478.8 297.2L478.9 296.7L343.4 161.2z"
+                />
+              </svg>
+
+              <div class="relative space-y-4">
+                <h3 class="text-lg md:text-xl font-semibold">
+                  Visual & UI Design
+                </h3>
+
+                <ul class="text-neutral-400 space-y-2 text-sm">
+                  <li>Interface Design</li>
+                  <li>Illustration</li>
+                  <li>Design Systems</li>
+                  <li>Brand Consistency</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- CREATIVE -->
+            <div
+              class="relative group rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-xl p-7 md:p-8 overflow-hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                class="absolute -right-12 -top-12 w-52 h-52 text-blue-500/10 group-hover:text-blue-500/20 transition duration-500 blur-[1px]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M192 128C192 92.7 220.7 64 256 64L576 64C611.3 64 640 92.7 640 128L640 352C640 387.3 611.3 416 576 416L256 416C220.7 416 192 387.3 192 352L192 128zM320 160C320 142.3 305.7 128 288 128C270.3 128 256 142.3 256 160C256 177.7 270.3 192 288 192C305.7 192 320 177.7 320 160zM476.5 171.5C472.1 164.4 464.4 160 456 160C447.6 160 439.9 164.4 435.5 171.5L381.5 259.8L363.6 234.2C359.1 227.8 351.8 224 343.9 224C336 224 328.7 227.8 324.2 234.2L268.2 314.2C263.1 321.5 262.4 331.1 266.6 339C270.8 346.9 279.1 352 288 352L544 352C552.7 352 560.7 347.3 564.9 339.7C569.1 332.1 569 322.9 564.4 315.4L476.4 171.4zM144 192L144 352C144 413.9 194.1 464 256 464L448 464L448 480C448 515.3 419.3 544 384 544L64 544C28.7 544 0 515.3 0 480L0 256C0 220.7 28.7 192 64 192L144 192zM52 260L52 284C52 292.8 59.2 300 68 300L92 300C100.8 300 108 292.8 108 284L108 260C108 251.2 100.8 244 92 244L68 244C59.2 244 52 251.2 52 260zM68 340C59.2 340 52 347.2 52 356L52 380C52 388.8 59.2 396 68 396L92 396C100.8 396 108 388.8 108 380L108 356C108 347.2 100.8 340 92 340L68 340zM68 436C59.2 436 52 443.2 52 452L52 476C52 484.8 59.2 492 68 492L92 492C100.8 492 108 484.8 108 476L108 452C108 443.2 100.8 436 92 436L68 436z"
+                />
+              </svg>
+
+              <div class="relative space-y-4">
+                <h3 class="text-lg md:text-xl font-semibold">
+                  Creative Production
+                </h3>
+
+                <ul class="text-neutral-400 space-y-2 text-sm">
+                  <li>Motion Graphics</li>
+                  <li>Video Editing</li>
+                  <li>Visual Storytelling</li>
+                  <li>Content Direction</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -436,6 +520,8 @@
         </div>
       </section>
     </main>
-    <script type="module" src="./src/js/main.js"></script>
+
+    <script src="./src/js/ui/stars.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
